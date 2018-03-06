@@ -1,0 +1,36 @@
+// Font families
+$title-font: 'Volkhov', serif;
+$base-font: 'Open Sans', sans-serif;
+// Font sizes
+$base-size: 16px;
+$medium-size: 18px;
+$large-size: 21px;
+$mobile-title-size: 27px;
+$title-size-desktop: 36px;
+
+
+
+
+// Base colors
+$background-color: #FFD77B;
+$marron-oscuro: rgb(178, 66, 1);
+$marron-fuerte: #FFB101;
+$azul-claro: #5E92FF;
+$azul-fuerte: #003ab2;
+
+
+// Main components colors
+$azul-oscuro: #000A19;
+$blanco: #ffffff;
+$amarillo: #E0E518;
+
+
+// Responsive
+// 667 iphone landscape. 768 ipad portrait
+$mobile-portrait-width: 414px;
+$mobile-landscape-width: 767px;
+$tablet-portrait-width: $mobile-landscape-width + 1;
+$tablet-landscape-width: 1024px;
+
+// Forms variables
+

@@ -1,0 +1,283 @@
+
+.detail-info{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    
+    margin: 90px 10px 10px 10px;
+    color: $azul-oscuro;
+    
+    
+    
+    .important-info{
+        
+        box-sizing: border-box;
+        display: flex;
+        padding-left: 20%;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+       
+        font-family: $base-font;
+        width: calc(50% - 10px);
+        order: 0;
+        
+       
+        @include if-mobile-landscape{
+            
+           // margin-left: 20%;
+            position: relative;
+            right: 10px;
+        }
+
+        @include if-desktop {
+            width: 100%;
+            position: absolute;
+            right: 0px;
+            z-index: -1;    
+            //padding-left: 1000px;
+            padding-left: calc(70% + 30px);
+            margin-top: 20px;
+            
+            
+        }
+
+
+
+        .detail-cover{
+
+            
+    
+            width: calc(40% - 10px);
+            min-width: 200px;
+            height: auto;
+            float: left;
+            max-height: 250px;  
+            
+           
+            @include if-mobile-landscape{
+                max-width: 200px;
+                
+
+            }
+            @include if-desktop {
+                width: calc(30%);
+                order: 0;
+                height: auto;
+               // max-height: 200px;
+                margin-left: 20px; 
+            }
+            
+        }
+
+        .right{
+            box-sizing: border-box;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+            
+            width: calc(50% - 5px);
+            margin-left: 10px;
+            margin-top: 10px;
+            
+            border-radius: 20px;
+            
+            @include if-desktop{
+
+                width: 30%;
+            
+            }
+
+            
+            .detail-title{
+                border-radius: 20px;
+                padding-top: 7px;
+                padding-bottom: 10px;
+                box-shadow: 5px 4px 20px $azul-oscuro;
+                padding-right: 8px;
+                padding-left: 8px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-weight: bold;
+                font-size: $large-size;
+                background-color: transparentize($color: $blanco, $amount: 0.2);
+
+                color: $azul-oscuro;
+                
+                width: 100%;
+            }
+
+            .detail-info{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                //background: linear-gradient(transparentize($color: $blanco, $amount: 0.3), transparentize($color: $blanco, $amount: 0.7));
+                //border-radius: 20px;
+                //box-shadow: 5px 4px 20px $azul-oscuro;
+                margin-top: 10px;
+                padding-top: 5px;
+
+                font-size: $medium-size;
+                color: $blanco;
+                width: 100%;
+
+                
+
+                .detail-info1{
+                    line-height: 1.2em;
+                    padding-bottom: 20px;
+                    text-align: center;
+
+                }
+
+                .detail-info2{
+                    
+                    padding-bottom: 10px;
+                    font-size: $large-size;
+                    font-weight: bold;
+                }
+
+            }
+
+        }
+
+
+    }
+
+
+
+    .texto1{
+        
+        
+        margin-top: 20px;
+        font-family: $base-font;
+        font-size: $base-size;
+        line-height: 1.07em;
+        background-color: transparentize($color: $blanco, $amount: 0.3);
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: 5px 4px 20px $azul-oscuro;
+
+
+        @include if-desktop{
+        width: calc(70% - 10px);
+        }
+        .segundo-parrafo{
+            //float: left;
+            padding-top: 30;
+            margin-top: 30px;
+            margin-right: 120px;
+            
+        }
+        .img1{
+
+            width: 100%;
+            margin-top: 10px;
+            height: auto;
+        }
+
+        
+            .img2{
+            
+                margin-top: 20px;
+                float: right;
+                width: 150px;
+                height: auto;
+            }
+
+        .book-link:link{
+            color: $marron-fuerte;
+        }
+
+        .book-link:visited{
+            color: $marron-oscuro;
+        }
+
+    }
+
+
+    .form{
+        box-sizing: border-box;
+        width: 100%;
+        margin-top: 20px;
+        font-family: $base-font;
+        font-size: $base-size;
+        background-color: transparentize($color: $blanco, $amount: 0.3);
+        border-radius: 20px;
+        padding: 7px;
+        box-shadow: 5px 4px 20px $azul-oscuro;
+
+        @include if-desktop{
+            width: 70% ;
+            }
+        
+        .frase-form{
+            text-align: center;
+            font-size: $medium-size;
+
+            
+            
+        }
+
+        .dos{
+            margin-top: 10px;
+        }
+        .selection{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 5px;
+
+            .selection-item{
+                margin: 5px;
+                width: 15px;
+            }
+        }
+
+        .comment{
+            margin: 5px;
+            text-align: left;
+            font-family: $base-font;
+            width: 95%;
+            height: 80px;
+            border-radius: 20px;
+
+            &:active{
+                
+                border-radius: 20px;
+                border-color: $marron-oscuro;
+            }
+
+            &:focus{
+                border-radius: 20px;
+                border-color: $marron-oscuro;
+            }
+        }
+    
+        .enviar{
+            margin-left: 48%;
+            font-family: $base-font;
+            font-size: $medium-size;
+            border-radius: 20px;
+            border-style: solid;
+            border-color: $marron-fuerte;
+            background-color: transparentize($color: $blanco, $amount: 0.3);
+        
+            &:active{
+                background-color: $marron-fuerte;
+                border-radius: 20px;
+                border-color: rgba(255, 255, 255, 0);
+            }
+
+            &:focus{
+                border-color: rgba(255, 255, 255, 0);
+                border-radius: 20px;
+            }
+        }
+    }
+        
+}
